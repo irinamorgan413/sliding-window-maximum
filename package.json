@@ -1,0 +1,17 @@
+{
+  "name": "sliding-window-maximum",
+  "version": "0.1.0",
+  "description": "Tracks the maximum value in a fixed-size sliding window over a data stream using a deque.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}
