@@ -58,3 +58,10 @@ strictly decreasing by value, which means the front is always the current max
 and the deque never holds two equal-valued entries at once. If you assert on
 internal deque length in your own code, expect at most one entry per distinct
 value, not one per index.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
